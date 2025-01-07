@@ -1,6 +1,8 @@
 # Feature store and model registry
 hopsworks
 
+jupyter
+
 # Resolve city names from (longitude, latitude) coordinates
 geopy==2.4.1
 
