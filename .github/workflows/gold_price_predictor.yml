@@ -31,7 +31,7 @@ jobs:
         with:
           commit_message: "Hourly gold price Predection Dashboard published"
           commit_options: '--no-verify --signoff'
-          file_pattern: 'gold_price_predictor/docs/plot.png'
+          file_pattern: 'docs/plot.png'
           repository: .
           status_options: '--untracked-files=no'
           skip_dirty_check: true
