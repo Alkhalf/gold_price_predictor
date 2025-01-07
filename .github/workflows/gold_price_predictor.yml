@@ -1,54 +1,37 @@
 name: gold-price-predictor
-
 on:
    schedule:
     - cron: '0 * * * *'  
-
 jobs:
   schedule_pipelines:
     runs-on: ubuntu-latest
-
     permissions:
       pages: write
       contents: write
-
     steps:
-      - name: Checkout repository content
+      - name: checkout repo content
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Ensure full history is fetched for commits
-
-      - name: Setup Python
+      - name: setup python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
-
-      - name: Install Python packages
+      - name: install python packages
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
-      - name: Execute Python workflows
+      - name: execute python workflows from bash script
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: |
           jupyter nbconvert --to notebook --execute features.ipynb
           jupyter nbconvert --to notebook --execute inference.ipynb
-
-      - name: Stage and commit changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/* docs/_includes/*
-          git commit -m "Hourly gold price prediction image and dashboard update"
-
-      - name: Publish to GitHub Pages
+      - name: github pages publish
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Hourly gold price Prediction Dashboard published"
+          commit_message: "Hourly gold price Predection Dashboard published"
           commit_options: '--no-verify --signoff'
-          file_pattern: 'docs/gold-price-predictor/assets/img/* docs/_includes/*'
+          file_pattern: 'docs/*'
           repository: .
           status_options: '--untracked-files=no'
           skip_dirty_check: true
