@@ -1,6 +1,7 @@
 # Feature store and model registry
 hopsworks
 
+python-binance
 jupyter
 
 # Resolve city names from (longitude, latitude) coordinates
