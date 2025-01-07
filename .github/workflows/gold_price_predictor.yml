@@ -2,6 +2,7 @@ name: gold-price-predictor
 on:
    schedule:
     - cron: '0 * * * *'  
+   workflow_dispatch:
 jobs:
   schedule_pipelines:
     runs-on: ubuntu-latest
@@ -24,14 +25,13 @@ jobs:
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: |
-          jupyter nbconvert --to notebook --execute features.ipynb
           jupyter nbconvert --to notebook --execute inference.ipynb
       - name: github pages publish
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Hourly gold price Predection Dashboard published"
           commit_options: '--no-verify --signoff'
-          file_pattern: 'gold_price_predictor/docs/plot.png'
+          file_pattern: 'docs/plot.png'
           repository: .
           status_options: '--untracked-files=no'
           skip_dirty_check: true
