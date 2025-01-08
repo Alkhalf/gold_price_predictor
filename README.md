@@ -1,3 +1,9 @@
 # gold_price_predictor
 
-## Prediction problem
+# Prediction Problem
+
+## Pipelines
+
+## Results
+
+## Reflection and Discussion
