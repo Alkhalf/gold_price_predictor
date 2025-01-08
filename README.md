@@ -31,12 +31,11 @@ Here we can see one plot that present the predction of gold price in 17:00
 
 ## Reflection and Discussion
 
-In this project we tried to automate the adding of new features into Hopworks and the inference and prediction of the new added data. However we was not able to run the github action. The reason is that we use Binaca API in the features.ipynb and when the Github actions run this we get an error that indicate "restricted location". Thefore we run these files locally  several times and one see the result in the docs. Every plot represent a prediction for a new hour , while csv file cotain the new added data into hopwors. 
+In this project we tried to automate the adding of new features into Hopworks and the inference and prediction of the new added data. However we was not able to run the github action. The reason is that we use Binaca API in the features.ipynb and when the Github actions run this we get an error that indicates "restricted location". Therefore we run these files locally several times and one sees the result in the docs. Every plot represents a prediction for a new hour , while csv file contain the newly added data into hopworks.
 
+The model seems to perform well and the reason is that data of the previous hour and current hour is related and when we pass all features of the previous hour then it will predict the gold price. However , it is interesting to test other models and see if we get a noticeable difference in the performance.
 
-The model seems to perform well and the reason is that data of the previous hour and current hour is related and when we pass all features of the previous hour then it will  predict the gold price. However , it interssting to test other models and see if we get noticable differecne in the performance.   
-
-In feature , one could add new data to train the model, becuase  we used only data for last 365 days. More data will give more generalization power to the model to predcit the gold price. 
+In the feature , one could add new data to train the model, because we used only data for the last 365 days. More data will give more generalization power to the model to predict the gold price.
 
 
 ## References 
