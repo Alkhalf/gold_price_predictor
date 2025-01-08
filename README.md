@@ -24,6 +24,8 @@ In this project we tried to automate the adding of new features into Hopworks an
 
 The model seem to perform well and the resons is that data of the previous hour  and currect hour is related  and when pass all features of the prevois hour then it will  predict the gold price. Howerver , it interssting to test other models and see if we get noticable diffeerecnes in the performance.   
 
+In feature , one could add new data to train the model, becuase  we used only data for last 365 days. More data will give more generalization power to the model to predcit the gold price. 
+
 
 ## References 
 
