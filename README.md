@@ -14,11 +14,11 @@ In this file, we use something similar to what we have before, where the differe
 
 ### Training
 
-In our traing we retrieve the data the historic data from hopworks and selctioed and appropriate features to train out model. To train our model we used XGBoost Regressor and we splited the data into traingn and test data. We also stored the model into hopwrks to reuse for the predcitios in the inferece pipline 
+In our training we retrieve the historic data from hopworks and we select appropriate features to train our model. To train our model we used XGBoost Regressor and we splited the data into training and test sets. We also stored the model into hopwrks to reuse it for the predcitios in the inference pipline 
 
 ### Inference 
 
-In this pipline what we do is just predict the gold price for the current hour. We start by retreive the data and the modeö from hopworks and then predcit the gold price. We repesent the predction as plot and save it in the docs 
+In this pipline what we do is just predict the gold price for the current hour. We start by retreive the data and the model from hopworks and then predcit the gold price. We repesent the predction as plot and save it in the docs 
 
 ## Results
 
@@ -31,10 +31,10 @@ Here we can see one plot that present the predction of gold price in 17:00
 
 ## Reflection and Discussion
 
-In this project we tried to automate the adding of new features into Hopworks and the inference and prediction of the new add data. However we was not able to run the gihtub action.. The reason is that we use Binaca API in the features.ipynb and when the Github actions run this we get an error that indicate "restricted location". Thefore we run htese files locally and one several times and one see the result in the docs. Evey plot repreent a prediction for a new hour , while csv file cotain the new added Into hopwors. 
+In this project we tried to automate the adding of new features into Hopworks and the inference and prediction of the new added data. However we was not able to run the github action. The reason is that we use Binaca API in the features.ipynb and when the Github actions run this we get an error that indicate "restricted location". Thefore we run these files locally  several times and one see the result in the docs. Every plot represent a prediction for a new hour , while csv file cotain the new added data into hopwors. 
 
 
-The model seem to perform well and the resons is that data of the previous hour  and currect hour is related  and when pass all features of the prevois hour then it will  predict the gold price. Howerver , it interssting to test other models and see if we get noticable diffeerecnes in the performance.   
+The model seems to perform well and the reason is that data of the previous hour and current hour is related and when we pass all features of the previous hour then it will  predict the gold price. However , it interssting to test other models and see if we get noticable differecne in the performance.   
 
 In feature , one could add new data to train the model, becuase  we used only data for last 365 days. More data will give more generalization power to the model to predcit the gold price. 
 
@@ -44,3 +44,5 @@ In feature , one could add new data to train the model, becuase  we used only da
 Lab 1
 
 ## How TO RUN
+
+Downlaod the packages in the requiremnt.txt, for instance in anconda envirment, and run the files
