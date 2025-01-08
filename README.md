@@ -1,6 +1,6 @@
 # gold_price_predictor
 
-# Prediction Problem
+## Prediction Problem
 
 ## Pipelines
 
