@@ -17,6 +17,10 @@ explain
 
 ## Results
 
+The evaluation of our model was based on the prediction of the test data. The test error (MSE) was The 43.1
+
+
+Here we can see one plot that present the predction of gold price in 17:00
 ![Prediction of gold price 17](docs/plot17.png)
 
 
