@@ -6,7 +6,8 @@ In this project we aim to predict the gold price for cuurent hour. When we say t
 
 In this project we made four pippelines in order to conduct and implment the project. 
 ### Backfill 
-explain 
+In the backfill file we request the data from the Binanc API. Firstly we connect to the API. Then we request data for gold hourly prices for the last year. This data contains features such as timestamp, open high, low close, and volume. Then we save these data in CSV files. However, for the gold we use the PAX asset which completely represents the gold price, and for the currency, we use USDT, which also has the USD as a base. Another feature that we also collected is the EURUSDT. This feature represents if the USDT changes prices in comparison to the euro. We thought also of having a feature BTCUSDT, but we found there is no strong correlation between the bitcoin and the PAX prices. Same for bitcoin and USDT. The reason is both USDT and PAX have a physical asset as a base and therefore  both are stable in price-changing terms. Finally, in this file, we save the features on the Hopswerk so we can extract these features later. 
+
 
 ### Features 
 explain 
