@@ -18,3 +18,10 @@ explain
 ## Results
 
 ## Reflection and Discussion
+
+
+## References 
+
+Lab 1
+
+## How TO RUN
