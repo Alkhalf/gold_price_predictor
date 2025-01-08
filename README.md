@@ -1,4 +1,4 @@
-# gold_price_predictor
+# Gold_price_predictor
 
 ## Prediction Problem
 
