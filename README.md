@@ -13,7 +13,11 @@ explain
 
 ### Training
 
+In our traing we retrieve the data the historic data from hopworks and selctioed and appropriate features to train out model. To train our model we used XGBoost Regressor and we splited the data into traingn and test data. We also stored the model into hopwrks to reuse for the predcitios in the inferece pipline 
+
 ### Inference 
+
+In this pipline what we do is just predict the gold price for the current hour. We start by retreive the data and the modeö from hopworks and then predcit the gold price. We repesent the predction as plot and save it in the docs 
 
 ## Results
 
