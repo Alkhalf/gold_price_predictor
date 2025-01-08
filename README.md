@@ -10,7 +10,7 @@ In the backfill file we request the data from the Binanc API. Firstly we connect
 
 
 ### Features 
-explain 
+In this file, we use something similar to what we have before, where the difference is to get the hourly live data. This data is useful in terms the prediction which occurs hourly. To make the prediction we take the last closed-hour gold price and the inflation rate (which is the change of price for EURUSDT for that last closed hour and hour before) and save it to a file.
 
 ### Training
 
