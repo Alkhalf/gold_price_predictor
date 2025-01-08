@@ -5,10 +5,11 @@ In this project we aim to predict the gold price for cuurent hour. When we say t
 ## Pipelines
 
 In this project we made four pippelines in order to conduct and implment the project. 
-### backfill 
+### Backfill 
 explain 
 
-### features 
+### Features 
+explain 
 
 ### Training
 
