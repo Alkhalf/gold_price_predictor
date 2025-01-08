@@ -14,11 +14,12 @@ In this file, we use something similar to what we have before, where the differe
 
 ### Training
 
-In our training we retrieve the historic data from hopworks and we select appropriate features to train our model. To train our model we used XGBoost Regressor and we splited the data into training and test sets. We also stored the model into hopwrks to reuse it for the predcitios in the inference pipline 
+In our training we retrieve the historic data from hopworks and we select appropriate features to train our model. To train our model we used XGBoost Regressor and we split the data into training and test sets. We also stored the model into hopworks to reuse it for the predictions in the inference pipeline 
 
 ### Inference 
 
-In this pipline what we do is just predict the gold price for the current hour. We start by retreive the data and the model from hopworks and then predcit the gold price. We repesent the predction as plot and save it in the docs 
+In this pipeline what we do is just predict the gold price for the current hour. We start by retrieving the data and the model from hopworks and then predict the gold price. We represent the prediction as plot and save it in the docs 
+
 
 ## Results
 
